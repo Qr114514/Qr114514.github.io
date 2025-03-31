@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>按钮(dianji.com)</title>
+    </head>
+    <body>
+        <h1 title="这是一个简单的页面">Welcome!</h1>
+        <button title="是的，请点下去！" onclick="myFuntion()">点我！</button>
+        <p id="demo"></p>
+        <script>
+            function myFuntion(){
+                var x;
+                var person = prompt("请留下你的名字");
+                if(person!=null && person!=""){
+                    x="你好 "+person+"!欢迎来到qr的网页";
+                    document.getElementById("demo").innerHTML=x;
+                }
+            }
+        </script>
+    </body>
+</html>
